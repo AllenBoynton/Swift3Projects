@@ -71,26 +71,26 @@
                                     <constraint firstAttribute="height" constant="40" id="i1u-2Q-oxi"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9s2-sN-GCK">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="95" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9s2-sN-GCK">
                                 <rect key="frame" x="0.0" y="225" width="375" height="442"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PartyCell" rowHeight="100" id="afi-og-bKu" userLabel="Party Cell" customClass="PartyCell" customModule="PartyRock" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PartyCell" rowHeight="95" id="afi-og-bKu" userLabel="Party Cell" customClass="PartyCell" customModule="PartyRock" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="95"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="afi-og-bKu" id="697-3O-uLN">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="94.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="partybanner" translatesAutoresizingMaskIntoConstraints="NO" id="jPZ-MK-Paf">
-                                                    <rect key="frame" x="8" y="12.5" width="75" height="75"/>
+                                                    <rect key="frame" x="8" y="10" width="75" height="75"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="75" id="Bcc-pC-ETw"/>
                                                         <constraint firstAttribute="width" constant="75" id="Tnz-ow-xS5"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where the sun goes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0M7-t4-xBo">
-                                                    <rect key="frame" x="91" y="8" width="276" height="84"/>
+                                                    <rect key="frame" x="91" y="8" width="276" height="79"/>
                                                     <fontDescription key="fontDescription" name="StillTime-Regular" family="Still Time" pointSize="32"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -152,14 +152,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="07m-Me-291">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="214"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <webView contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="07m-Me-291">
+                                <rect key="frame" x="0.0" y="25" width="375" height="214"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="214" id="Sg8-dd-TCn"/>
+                                </constraints>
                             </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Wc-tz-YFz">
+                                <rect key="frame" x="0.0" y="299" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="fbc-Bv-4w5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="StillTime-Regular" family="Still Time" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="07m-Me-291" secondAttribute="trailing" id="ENj-iw-jvz"/>
+                            <constraint firstItem="07m-Me-291" firstAttribute="top" secondItem="ahg-eq-Woe" secondAttribute="top" constant="25" id="PpH-lD-kt4"/>
+                            <constraint firstItem="7Wc-tz-YFz" firstAttribute="top" secondItem="07m-Me-291" secondAttribute="bottom" constant="60" id="Pt7-hR-67P"/>
+                            <constraint firstAttribute="trailing" secondItem="7Wc-tz-YFz" secondAttribute="trailing" id="VHq-xk-Bps"/>
+                            <constraint firstItem="07m-Me-291" firstAttribute="leading" secondItem="ahg-eq-Woe" secondAttribute="leading" id="YQ1-0i-P0l"/>
+                            <constraint firstItem="7Wc-tz-YFz" firstAttribute="leading" secondItem="ahg-eq-Woe" secondAttribute="leading" id="k3M-Ie-Dbs"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="videoTitle" destination="7Wc-tz-YFz" id="KEY-jB-mVA"/>
+                        <outlet property="webView" destination="07m-Me-291" id="II2-V8-IsS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ILb-vG-NdU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
