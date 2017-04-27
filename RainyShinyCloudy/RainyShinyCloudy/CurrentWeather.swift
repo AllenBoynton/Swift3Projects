@@ -11,10 +11,10 @@ import Alamofire
 
 class CurrentWeather {
     
-    private var _cityName: String!
-    private var _date: String!
-    private var _weatherType: String!
-    private var _currentTemp: Double!
+    var _cityName: String!
+    var _date: String!
+    var _weatherType: String!
+    var _currentTemp: Double!
     
     var cityName: String {
         if _cityName == nil {
@@ -33,7 +33,6 @@ class CurrentWeather {
         dateFormatter.timeStyle = .none // Do not need timestamp
         let currentDate = dateFormatter.string(from: Date())
         self._date = "Today, \(currentDate)"
-        
         return _date
     }
     
@@ -52,7 +51,7 @@ class CurrentWeather {
     }
     
     
-    func downloadWeatherDetails(completed: DownloadComplete) {
+    func downloadWeatherDetails(completed: @escaping DownloadComplete) {
         // Alamofire download
         let currentWeatherURL = URL(string: CURRENT_WEATHER_URL)!
         Alamofire.request(currentWeatherURL).responseJSON { response in
@@ -78,8 +77,11 @@ class CurrentWeather {
                     if let currentTemperature = main["temp"] as? Double {
                         
                         let kelvinToFarenheitPreDivision = (currentTemperature * (9 / 5) - 459.67)
+                        
                         let kelvinToFarenheit = Double(round(10 * kelvinToFarenheitPreDivision / 10))
+                        
                         self._currentTemp = kelvinToFarenheit
+                        
                         print(self._currentTemp)
                     }
                 }
