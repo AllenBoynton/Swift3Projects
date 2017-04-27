@@ -115,6 +115,6 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource, C
         tempLabel.text = "\(currentWeather.currentTemp)°"
         locationLabel.text = currentWeather.cityName
         currentImage.image = UIImage(named: currentWeather.weatherType)
-        currentWeatherLabel.text = "Current skies: \(currentWeather.weatherType)"
+        currentWeatherLabel.text = "Current skies: \n" + "\(currentWeather.weatherType)"
     }
 }
