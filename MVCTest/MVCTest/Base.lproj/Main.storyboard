@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MVCTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IUw-2j-ZMB">
+                                <rect key="frame" x="0.0" y="120" width="375" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="fNi-80-xwY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <color key="textColor" red="0.99884754419326782" green="0.28344866633415222" blue="0.1965508759021759" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="Jtb-M2-wGo" customClass="RoundedImageView" customModule="MVCTest" customModuleProvider="target">
+                                <rect key="frame" x="67" y="233" width="240" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="QXB-lk-SGU"/>
+                                    <constraint firstAttribute="width" secondItem="Jtb-M2-wGo" secondAttribute="height" multiplier="6:5" id="YCC-gg-sdR"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a new first name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="79v-eX-BeA">
+                                <rect key="frame" x="67" y="174" width="240" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="G93-lB-gC6"/>
+                                    <constraint firstAttribute="width" constant="240" id="cZa-KM-RxG"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iau-rN-Q0c">
+                                <rect key="frame" x="127" y="509" width="120" height="30"/>
+                                <color key="backgroundColor" red="0.1278364360332489" green="0.28713026642799377" blue="0.72907185554504395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="wa2-Ao-1rz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                <state key="normal" title="Rename">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="renameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jMW-mD-bos"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="IUw-2j-ZMB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="16a-Zb-U3D"/>
+                            <constraint firstAttribute="trailing" secondItem="IUw-2j-ZMB" secondAttribute="trailing" id="2Lz-TE-ebh"/>
+                            <constraint firstItem="iau-rN-Q0c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7TQ-Rg-12b"/>
+                            <constraint firstItem="Jtb-M2-wGo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EKB-t0-J0S"/>
+                            <constraint firstItem="iau-rN-Q0c" firstAttribute="width" secondItem="Jtb-M2-wGo" secondAttribute="width" multiplier="0.5" id="FAe-91-qVB"/>
+                            <constraint firstItem="IUw-2j-ZMB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Rsv-H7-TCf"/>
+                            <constraint firstItem="79v-eX-BeA" firstAttribute="top" secondItem="IUw-2j-ZMB" secondAttribute="bottom" constant="14" id="X7J-Qz-8M3"/>
+                            <constraint firstItem="iau-rN-Q0c" firstAttribute="top" secondItem="Jtb-M2-wGo" secondAttribute="bottom" constant="76" id="e3q-6h-Fah"/>
+                            <constraint firstItem="Jtb-M2-wGo" firstAttribute="top" secondItem="IUw-2j-ZMB" secondAttribute="bottom" constant="73" id="hfj-jl-xcm"/>
+                            <constraint firstItem="79v-eX-BeA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jap-OI-cCd"/>
+                            <constraint firstItem="79v-eX-BeA" firstAttribute="width" secondItem="Jtb-M2-wGo" secondAttribute="width" id="xM6-dg-aBo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fullName" destination="IUw-2j-ZMB" id="n1R-Ea-14F"/>
+                        <outlet property="renameBtn" destination="iau-rN-Q0c" id="wY0-mz-YNc"/>
+                        <outlet property="renameField" destination="79v-eX-BeA" id="Wfy-XD-QbD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="download" width="243" height="207"/>
+    </resources>
+</document>
