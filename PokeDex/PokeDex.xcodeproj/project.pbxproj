@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		095490A41EB4066A00F837E5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 095490A11EB4066A00F837E5 /* AVFoundation.framework */; };
+		095490A61EB4072300F837E5 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 095490A51EB4072300F837E5 /* Alamofire.framework */; };
+		095490A81EB4072C00F837E5 /* Pods_PokeDex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 095490A71EB4072C00F837E5 /* Pods_PokeDex.framework */; };
 		09D0C8961EB2B212003B9E86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D0C8951EB2B212003B9E86 /* AppDelegate.swift */; };
 		09D0C8981EB2B212003B9E86 /* PokemonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D0C8971EB2B212003B9E86 /* PokemonVC.swift */; };
 		09D0C89B1EB2B212003B9E86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09D0C8991EB2B212003B9E86 /* Main.storyboard */; };
@@ -14,18 +17,18 @@
 		09D0C8A01EB2B212003B9E86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09D0C89E1EB2B212003B9E86 /* LaunchScreen.storyboard */; };
 		09D0C8B81EB2BD60003B9E86 /* PokemonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D0C8B71EB2BD60003B9E86 /* PokemonDetailVC.swift */; };
 		09D0C8BA1EB2C7AE003B9E86 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D0C8B91EB2C7AE003B9E86 /* Pokemon.swift */; };
-		09D0C8BC1EB2CC9B003B9E86 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D0C8BB1EB2CC9B003B9E86 /* Alamofire.framework */; };
-		09D0C8BE1EB2CCB6003B9E86 /* Pods_PokeDex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D0C8BD1EB2CCB6003B9E86 /* Pods_PokeDex.framework */; };
 		09D0C8C01EB2D53C003B9E86 /* pokemon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 09D0C8BF1EB2D53C003B9E86 /* pokemon.ttf */; };
 		09D0C8C21EB2D57C003B9E86 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 09D0C8C11EB2D57C003B9E86 /* music.mp3 */; };
 		09D0C8C41EB2D740003B9E86 /* pokemon.csv in Resources */ = {isa = PBXBuildFile; fileRef = 09D0C8C31EB2D740003B9E86 /* pokemon.csv */; };
 		09D0C8C71EB2DF87003B9E86 /* PokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D0C8C61EB2DF87003B9E86 /* PokeCell.swift */; };
-		09D0C8C91EB2E6DF003B9E86 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D0C8C81EB2E6DF003B9E86 /* AVFoundation.framework */; };
 		09D0C8CC1EB2F808003B9E86 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D0C8CB1EB2F808003B9E86 /* csv.swift */; };
 		09D0C8CE1EB2F820003B9E86 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D0C8CD1EB2F820003B9E86 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		095490A11EB4066A00F837E5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		095490A51EB4072300F837E5 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../../../../Full Sail/Current Class/Visual Frameworks/Developer/PokeDex-ciakxxfhamvklpaeevnegmnyrbqp/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		095490A71EB4072C00F837E5 /* Pods_PokeDex.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_PokeDex.framework; path = "../../../../../../../Full Sail/Current Class/Visual Frameworks/Developer/PokeDex-ciakxxfhamvklpaeevnegmnyrbqp/Build/Products/Debug-iphonesimulator/Pods_PokeDex.framework"; sourceTree = "<group>"; };
 		09D0C8921EB2B212003B9E86 /* PokeDex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeDex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D0C8951EB2B212003B9E86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09D0C8971EB2B212003B9E86 /* PokemonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonVC.swift; sourceTree = "<group>"; };
@@ -35,13 +38,10 @@
 		09D0C8A11EB2B212003B9E86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09D0C8B71EB2BD60003B9E86 /* PokemonDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonDetailVC.swift; sourceTree = "<group>"; };
 		09D0C8B91EB2C7AE003B9E86 /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
-		09D0C8BB1EB2CC9B003B9E86 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../../../../Full Sail/Current Class/Visual Frameworks/Developer/PokeDex-ciakxxfhamvklpaeevnegmnyrbqp/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
-		09D0C8BD1EB2CCB6003B9E86 /* Pods_PokeDex.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_PokeDex.framework; path = "../../../../../../../Full Sail/Current Class/Visual Frameworks/Developer/PokeDex-ciakxxfhamvklpaeevnegmnyrbqp/Build/Products/Debug-iphonesimulator/Pods_PokeDex.framework"; sourceTree = "<group>"; };
 		09D0C8BF1EB2D53C003B9E86 /* pokemon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pokemon.ttf; sourceTree = "<group>"; };
 		09D0C8C11EB2D57C003B9E86 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
 		09D0C8C31EB2D740003B9E86 /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
 		09D0C8C61EB2DF87003B9E86 /* PokeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeCell.swift; sourceTree = "<group>"; };
-		09D0C8C81EB2E6DF003B9E86 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		09D0C8CB1EB2F808003B9E86 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
 		09D0C8CD1EB2F820003B9E86 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		45A5D3C9EAE07181D83A5721 /* Pods-PokeDex.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokeDex.release.xcconfig"; path = "Pods/Target Support Files/Pods-PokeDex/Pods-PokeDex.release.xcconfig"; sourceTree = "<group>"; };
@@ -53,9 +53,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09D0C8C91EB2E6DF003B9E86 /* AVFoundation.framework in Frameworks */,
-				09D0C8BE1EB2CCB6003B9E86 /* Pods_PokeDex.framework in Frameworks */,
-				09D0C8BC1EB2CC9B003B9E86 /* Alamofire.framework in Frameworks */,
+				095490A81EB4072C00F837E5 /* Pods_PokeDex.framework in Frameworks */,
+				095490A61EB4072300F837E5 /* Alamofire.framework in Frameworks */,
+				095490A41EB4066A00F837E5 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,9 +143,9 @@
 		09D0C8B21EB2BACC003B9E86 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				09D0C8C81EB2E6DF003B9E86 /* AVFoundation.framework */,
-				09D0C8BD1EB2CCB6003B9E86 /* Pods_PokeDex.framework */,
-				09D0C8BB1EB2CC9B003B9E86 /* Alamofire.framework */,
+				095490A71EB4072C00F837E5 /* Pods_PokeDex.framework */,
+				095490A51EB4072300F837E5 /* Alamofire.framework */,
+				095490A11EB4066A00F837E5 /* AVFoundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -440,6 +440,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/Alamofire",
+					"$(PROJECT_DIR)/build/Release-iphoneos/Alamofire",
+					"$(PROJECT_DIR)/build/Release-iphoneos",
 				);
 				INFOPLIST_FILE = PokeDex/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -459,6 +461,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/Alamofire",
+					"$(PROJECT_DIR)/build/Release-iphoneos/Alamofire",
+					"$(PROJECT_DIR)/build/Release-iphoneos",
 				);
 				INFOPLIST_FILE = PokeDex/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
