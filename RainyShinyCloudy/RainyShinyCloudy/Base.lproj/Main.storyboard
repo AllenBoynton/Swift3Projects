@@ -61,7 +61,7 @@
                                     <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="U0x-ls-vKZ">
                                         <rect key="frame" x="227.5" y="100" width="127.5" height="180"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Rain" translatesAutoresizingMaskIntoConstraints="NO" id="QLe-ae-sgo">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Partially Cloudy" translatesAutoresizingMaskIntoConstraints="NO" id="QLe-ae-sgo">
                                                 <rect key="frame" x="14" y="0.0" width="100" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="84o-zd-Yic"/>
@@ -138,13 +138,13 @@
                                                             <rect key="frame" x="131.5" y="0.0" width="117.5" height="50"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="76.5°" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="f3t-A7-ksx">
-                                                                    <rect key="frame" x="0.5" y="0.0" width="117.5" height="25"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="117.5" height="25"/>
                                                                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
                                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="65.4°" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="biQ-iW-EOh">
-                                                                    <rect key="frame" x="0.5" y="25" width="117.5" height="25"/>
+                                                                    <rect key="frame" x="0.0" y="25" width="117.5" height="25"/>
                                                                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
                                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
@@ -221,6 +221,6 @@
     </scenes>
     <resources>
         <image name="Clouds" width="92" height="68"/>
-        <image name="Rain" width="92" height="92"/>
+        <image name="Partially Cloudy" width="92" height="72"/>
     </resources>
 </document>
