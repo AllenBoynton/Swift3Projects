@@ -25,22 +25,22 @@ class Pokemon {
     private var _nextEvolutionLevel: String!
     private var _pokemonURL: String!
     
-    var nextEvolutionLevel: String {
+    var name: String {
         
-        if _nextEvolutionLevel == nil {
+        if _name == nil {
             
-            _nextEvolutionLevel = ""
+            _name = ""
         }
-        return _nextEvolutionLevel
+        return _name
     }
     
-    var nextEvolutionId: String {
+    var pokedexId: Int {
         
-        if _nextEvolutionId == nil {
+        if _pokedexId == nil {
             
-            _nextEvolutionId = ""
+            _pokedexId = 0
         }
-        return _nextEvolutionId
+        return _pokedexId
     }
     
     var nextEvolutionName: String {
@@ -106,6 +106,24 @@ class Pokemon {
         return _attack
     }
     
+    var nextEvolutionLevel: String {
+        
+        if _nextEvolutionLevel == nil {
+            
+            _nextEvolutionLevel = ""
+        }
+        return _nextEvolutionLevel
+    }
+    
+    var nextEvolutionId: String {
+        
+        if _nextEvolutionId == nil {
+            
+            _nextEvolutionId = ""
+        }
+        return _nextEvolutionId
+    }
+    
     var nextEvolutionText: String {
         
         if _nextEvolutionTxt == nil {
@@ -115,16 +133,6 @@ class Pokemon {
         return _nextEvolutionTxt
     }
     
-    
-    var name: String {
-        
-        return _name
-    }
-    
-    var pokedexId: Int {
-        
-        return _pokedexId
-    }
     
     init(name: String, pokedexId: Int) {
         

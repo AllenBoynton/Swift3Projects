@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		095490A41EB4066A00F837E5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 095490A11EB4066A00F837E5 /* AVFoundation.framework */; };
 		095490A61EB4072300F837E5 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 095490A51EB4072300F837E5 /* Alamofire.framework */; };
-		095490A81EB4072C00F837E5 /* Pods_PokeDex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 095490A71EB4072C00F837E5 /* Pods_PokeDex.framework */; };
 		09D0C8961EB2B212003B9E86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D0C8951EB2B212003B9E86 /* AppDelegate.swift */; };
 		09D0C8981EB2B212003B9E86 /* PokemonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D0C8971EB2B212003B9E86 /* PokemonVC.swift */; };
 		09D0C89B1EB2B212003B9E86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09D0C8991EB2B212003B9E86 /* Main.storyboard */; };
@@ -23,12 +22,12 @@
 		09D0C8C71EB2DF87003B9E86 /* PokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D0C8C61EB2DF87003B9E86 /* PokeCell.swift */; };
 		09D0C8CC1EB2F808003B9E86 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D0C8CB1EB2F808003B9E86 /* csv.swift */; };
 		09D0C8CE1EB2F820003B9E86 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D0C8CD1EB2F820003B9E86 /* Constants.swift */; };
+		09FD22631EB82F28006C8028 /* Pods_PokeDex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09FD22621EB82F28006C8028 /* Pods_PokeDex.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		095490A11EB4066A00F837E5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		095490A51EB4072300F837E5 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../../../../Full Sail/Current Class/Visual Frameworks/Developer/PokeDex-ciakxxfhamvklpaeevnegmnyrbqp/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
-		095490A71EB4072C00F837E5 /* Pods_PokeDex.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_PokeDex.framework; path = "../../../../../../../Full Sail/Current Class/Visual Frameworks/Developer/PokeDex-ciakxxfhamvklpaeevnegmnyrbqp/Build/Products/Debug-iphonesimulator/Pods_PokeDex.framework"; sourceTree = "<group>"; };
 		09D0C8921EB2B212003B9E86 /* PokeDex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeDex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D0C8951EB2B212003B9E86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09D0C8971EB2B212003B9E86 /* PokemonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonVC.swift; sourceTree = "<group>"; };
@@ -44,6 +43,7 @@
 		09D0C8C61EB2DF87003B9E86 /* PokeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeCell.swift; sourceTree = "<group>"; };
 		09D0C8CB1EB2F808003B9E86 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
 		09D0C8CD1EB2F820003B9E86 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		09FD22621EB82F28006C8028 /* Pods_PokeDex.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_PokeDex.framework; path = "../../../../../../../Full Sail/Current Class/Visual Frameworks/Developer/PokeDex-ciakxxfhamvklpaeevnegmnyrbqp/Build/Products/Debug-iphonesimulator/Pods_PokeDex.framework"; sourceTree = "<group>"; };
 		45A5D3C9EAE07181D83A5721 /* Pods-PokeDex.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokeDex.release.xcconfig"; path = "Pods/Target Support Files/Pods-PokeDex/Pods-PokeDex.release.xcconfig"; sourceTree = "<group>"; };
 		D4D4DC76EBCC3098559FA4A8 /* Pods-PokeDex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokeDex.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PokeDex/Pods-PokeDex.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -53,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				095490A81EB4072C00F837E5 /* Pods_PokeDex.framework in Frameworks */,
+				09FD22631EB82F28006C8028 /* Pods_PokeDex.framework in Frameworks */,
 				095490A61EB4072300F837E5 /* Alamofire.framework in Frameworks */,
 				095490A41EB4066A00F837E5 /* AVFoundation.framework in Frameworks */,
 			);
@@ -87,20 +87,20 @@
 				09D0C8AA1EB2B25A003B9E86 /* Resources */,
 				09D0C8A91EB2B246003B9E86 /* Storyboards */,
 				09D0C8CA1EB2F7DD003B9E86 /* Utilities */,
-				09D0C8C51EB2DF5E003B9E86 /* View */,
 				09D0C8AD1EB2B2C9003B9E86 /* Model */,
-				09D0C8A71EB2B220003B9E86 /* ViewControllers */,
+				09D0C8C51EB2DF5E003B9E86 /* View */,
+				09D0C8A71EB2B220003B9E86 /* Controller */,
 			);
 			path = PokeDex;
 			sourceTree = "<group>";
 		};
-		09D0C8A71EB2B220003B9E86 /* ViewControllers */ = {
+		09D0C8A71EB2B220003B9E86 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				09D0C8B71EB2BD60003B9E86 /* PokemonDetailVC.swift */,
 				09D0C8971EB2B212003B9E86 /* PokemonVC.swift */,
 			);
-			name = ViewControllers;
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		09D0C8A81EB2B233003B9E86 /* AppDelegate */ = {
@@ -143,7 +143,7 @@
 		09D0C8B21EB2BACC003B9E86 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				095490A71EB4072C00F837E5 /* Pods_PokeDex.framework */,
+				09FD22621EB82F28006C8028 /* Pods_PokeDex.framework */,
 				095490A51EB4072300F837E5 /* Alamofire.framework */,
 				095490A11EB4066A00F837E5 /* AVFoundation.framework */,
 			);

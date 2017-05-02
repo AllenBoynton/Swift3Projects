@@ -88,23 +88,10 @@ class PokemonVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
         return 1
     }
     
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        // Compute the dimension of a cell for an NxN layout with space S between
-        // cells.  Take the collection view's width, subtract (N-1)*S points for
-        // the spaces between the cells, and then divide by N to find the final
-        // dimension for the cell's width and height.
-        
-        let cellsAcross: CGFloat = 3
-        let spaceBetweenCells: CGFloat = 8
-        _ = (collectionView.bounds.width - (cellsAcross - 1) * spaceBetweenCells) / cellsAcross
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         return CGSize(width: 105, height: 105)
     }
-    
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        
-//        return CGSize(width: 105, height: 105)
-//    }
     
     func initAudio() {
         
@@ -115,7 +102,9 @@ class PokemonVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
             musicPlayer.prepareToPlay()
             musicPlayer.numberOfLoops = -1
             musicPlayer.play()
+            
         } catch let err as NSError {
+            
             print(err.debugDescription)
         }
     }
@@ -137,6 +126,7 @@ class PokemonVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
                 pokemon.append(poke)
             }
         } catch let err as NSError {
+            
             print(err.debugDescription)
         }
     }
@@ -161,12 +151,28 @@ class PokemonVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
         if segue.identifier == "PokemonDetailVC" {
             if let detailsVC = segue.destination as? PokemonDetailVC {
                 if let poke = sender as? Pokemon {
                     detailsVC.pokemon = poke
                 }
             }
+        }
+    }
+    
+    // Music button to turn music on/off
+    @IBAction func musicBtnPressed(_ sender: UIButton) {
+        
+        if musicPlayer.isPlaying {
+            // pauses music & makes partial transparent
+            musicPlayer.pause()
+            sender.alpha = 0.2
+            
+        } else {
+            // plays music & makes full view
+            musicPlayer.play()
+            sender.alpha = 1.0
         }
     }
 }
