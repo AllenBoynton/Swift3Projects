@@ -130,7 +130,8 @@
 				09DE6B251EB0414100D1F8B1 /* Resources */,
 				09DE6B241EB0411400D1F8B1 /* Storyboards */,
 				09DE6B221EB040F700D1F8B1 /* Model */,
-				09DE6B211EB040E700D1F8B1 /* ViewControllers */,
+				09FD22B81EB96FD8006C8028 /* View */,
+				09DE6B211EB040E700D1F8B1 /* Controller */,
 			);
 			path = RainyShinyCloudy;
 			sourceTree = "<group>";
@@ -153,13 +154,13 @@
 			path = RainyShinyCloudyUITests;
 			sourceTree = "<group>";
 		};
-		09DE6B211EB040E700D1F8B1 /* ViewControllers */ = {
+		09DE6B211EB040E700D1F8B1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				09ACE0BA1EB16FBB00A3A454 /* Constants.swift */,
 				09DE6AF51EB03F1400D1F8B1 /* WeatherVC.swift */,
 			);
-			name = ViewControllers;
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		09DE6B221EB040F700D1F8B1 /* Model */ = {
@@ -197,6 +198,13 @@
 				09DE6AFF1EB03F1400D1F8B1 /* Info.plist */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		09FD22B81EB96FD8006C8028 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		EA56218B9509E5974F648894 /* Pods */ = {
