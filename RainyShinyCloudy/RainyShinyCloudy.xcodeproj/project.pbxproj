@@ -19,8 +19,6 @@
 		09DE6AF91EB03F1400D1F8B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09DE6AF71EB03F1400D1F8B1 /* Main.storyboard */; };
 		09DE6AFB1EB03F1400D1F8B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09DE6AFA1EB03F1400D1F8B1 /* Assets.xcassets */; };
 		09DE6AFE1EB03F1400D1F8B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09DE6AFC1EB03F1400D1F8B1 /* LaunchScreen.storyboard */; };
-		09DE6B091EB03F1400D1F8B1 /* RainyShinyCloudyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DE6B081EB03F1400D1F8B1 /* RainyShinyCloudyTests.swift */; };
-		09DE6B141EB03F1400D1F8B1 /* RainyShinyCloudyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DE6B131EB03F1400D1F8B1 /* RainyShinyCloudyUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,11 +54,7 @@
 		09DE6AFD1EB03F1400D1F8B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09DE6AFF1EB03F1400D1F8B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09DE6B041EB03F1400D1F8B1 /* RainyShinyCloudyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RainyShinyCloudyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		09DE6B081EB03F1400D1F8B1 /* RainyShinyCloudyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainyShinyCloudyTests.swift; sourceTree = "<group>"; };
-		09DE6B0A1EB03F1400D1F8B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09DE6B0F1EB03F1400D1F8B1 /* RainyShinyCloudyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RainyShinyCloudyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		09DE6B131EB03F1400D1F8B1 /* RainyShinyCloudyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainyShinyCloudyUITests.swift; sourceTree = "<group>"; };
-		09DE6B151EB03F1400D1F8B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		411F845008287EEF4C5AFBEC /* Pods-RainyShinyCloudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainyShinyCloudy.release.xcconfig"; path = "Pods/Target Support Files/Pods-RainyShinyCloudy/Pods-RainyShinyCloudy.release.xcconfig"; sourceTree = "<group>"; };
 		65F1842B03F0A780D44B1D56 /* Pods-RainyShinyCloudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainyShinyCloudy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RainyShinyCloudy/Pods-RainyShinyCloudy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,8 +99,6 @@
 			isa = PBXGroup;
 			children = (
 				09DE6AF21EB03F1400D1F8B1 /* RainyShinyCloudy */,
-				09DE6B071EB03F1400D1F8B1 /* RainyShinyCloudyTests */,
-				09DE6B121EB03F1400D1F8B1 /* RainyShinyCloudyUITests */,
 				09DE6AF11EB03F1400D1F8B1 /* Products */,
 				EA56218B9509E5974F648894 /* Pods */,
 				09ACE0C01EB1AA7F00A3A454 /* Frameworks */,
@@ -134,24 +126,6 @@
 				09DE6B211EB040E700D1F8B1 /* Controller */,
 			);
 			path = RainyShinyCloudy;
-			sourceTree = "<group>";
-		};
-		09DE6B071EB03F1400D1F8B1 /* RainyShinyCloudyTests */ = {
-			isa = PBXGroup;
-			children = (
-				09DE6B081EB03F1400D1F8B1 /* RainyShinyCloudyTests.swift */,
-				09DE6B0A1EB03F1400D1F8B1 /* Info.plist */,
-			);
-			path = RainyShinyCloudyTests;
-			sourceTree = "<group>";
-		};
-		09DE6B121EB03F1400D1F8B1 /* RainyShinyCloudyUITests */ = {
-			isa = PBXGroup;
-			children = (
-				09DE6B131EB03F1400D1F8B1 /* RainyShinyCloudyUITests.swift */,
-				09DE6B151EB03F1400D1F8B1 /* Info.plist */,
-			);
-			path = RainyShinyCloudyUITests;
 			sourceTree = "<group>";
 		};
 		09DE6B211EB040E700D1F8B1 /* Controller */ = {
@@ -418,7 +392,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09DE6B091EB03F1400D1F8B1 /* RainyShinyCloudyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,7 +399,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09DE6B141EB03F1400D1F8B1 /* RainyShinyCloudyUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
