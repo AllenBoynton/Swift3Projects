@@ -90,15 +90,3 @@ class CurrentWeather {
         completed()
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
