@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		097191DE1EC78DF800AAC75F /* RainyShinyCloudyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097191DD1EC78DF800AAC75F /* RainyShinyCloudyUITests.swift */; };
 		09ACE0BB1EB16FBB00A3A454 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ACE0BA1EB16FBB00A3A454 /* Constants.swift */; };
 		09ACE0BD1EB172B100A3A454 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ACE0BC1EB172B100A3A454 /* CurrentWeather.swift */; };
 		09ACE0BF1EB197B500A3A454 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ACE0BE1EB197B500A3A454 /* Forecast.swift */; };
@@ -22,14 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		09DE6B051EB03F1400D1F8B1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 09DE6AE81EB03F1400D1F8B1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 09DE6AEF1EB03F1400D1F8B1;
-			remoteInfo = RainyShinyCloudy;
-		};
-		09DE6B101EB03F1400D1F8B1 /* PBXContainerItemProxy */ = {
+		097191E01EC78DF800AAC75F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 09DE6AE81EB03F1400D1F8B1 /* Project object */;
 			proxyType = 1;
@@ -39,6 +33,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		097191DB1EC78DF800AAC75F /* RainyShinyCloudyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RainyShinyCloudyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		097191DD1EC78DF800AAC75F /* RainyShinyCloudyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainyShinyCloudyUITests.swift; sourceTree = "<group>"; };
+		097191DF1EC78DF800AAC75F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09ACE0BA1EB16FBB00A3A454 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		09ACE0BC1EB172B100A3A454 /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 		09ACE0BE1EB197B500A3A454 /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
@@ -53,13 +50,18 @@
 		09DE6AFA1EB03F1400D1F8B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09DE6AFD1EB03F1400D1F8B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09DE6AFF1EB03F1400D1F8B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		09DE6B041EB03F1400D1F8B1 /* RainyShinyCloudyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RainyShinyCloudyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		09DE6B0F1EB03F1400D1F8B1 /* RainyShinyCloudyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RainyShinyCloudyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		411F845008287EEF4C5AFBEC /* Pods-RainyShinyCloudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainyShinyCloudy.release.xcconfig"; path = "Pods/Target Support Files/Pods-RainyShinyCloudy/Pods-RainyShinyCloudy.release.xcconfig"; sourceTree = "<group>"; };
 		65F1842B03F0A780D44B1D56 /* Pods-RainyShinyCloudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainyShinyCloudy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RainyShinyCloudy/Pods-RainyShinyCloudy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		097191D81EC78DF800AAC75F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		09DE6AED1EB03F1400D1F8B1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -69,23 +71,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		09DE6B011EB03F1400D1F8B1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		09DE6B0C1EB03F1400D1F8B1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		097191DC1EC78DF800AAC75F /* RainyShinyCloudyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				097191DD1EC78DF800AAC75F /* RainyShinyCloudyUITests.swift */,
+				097191DF1EC78DF800AAC75F /* Info.plist */,
+			);
+			path = RainyShinyCloudyUITests;
+			sourceTree = "<group>";
+		};
 		09ACE0C01EB1AA7F00A3A454 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				09DE6AF21EB03F1400D1F8B1 /* RainyShinyCloudy */,
+				097191DC1EC78DF800AAC75F /* RainyShinyCloudyUITests */,
 				09DE6AF11EB03F1400D1F8B1 /* Products */,
 				EA56218B9509E5974F648894 /* Pods */,
 				09ACE0C01EB1AA7F00A3A454 /* Frameworks */,
@@ -109,8 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				09DE6AF01EB03F1400D1F8B1 /* RainyShinyCloudy.app */,
-				09DE6B041EB03F1400D1F8B1 /* RainyShinyCloudyTests.xctest */,
-				09DE6B0F1EB03F1400D1F8B1 /* RainyShinyCloudyUITests.xctest */,
+				097191DB1EC78DF800AAC75F /* RainyShinyCloudyUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -193,6 +190,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		097191DA1EC78DF800AAC75F /* RainyShinyCloudyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 097191E21EC78DF800AAC75F /* Build configuration list for PBXNativeTarget "RainyShinyCloudyUITests" */;
+			buildPhases = (
+				097191D71EC78DF800AAC75F /* Sources */,
+				097191D81EC78DF800AAC75F /* Frameworks */,
+				097191D91EC78DF800AAC75F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				097191E11EC78DF800AAC75F /* PBXTargetDependency */,
+			);
+			name = RainyShinyCloudyUITests;
+			productName = RainyShinyCloudyUITests;
+			productReference = 097191DB1EC78DF800AAC75F /* RainyShinyCloudyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		09DE6AEF1EB03F1400D1F8B1 /* RainyShinyCloudy */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 09DE6B181EB03F1400D1F8B1 /* Build configuration list for PBXNativeTarget "RainyShinyCloudy" */;
@@ -213,42 +228,6 @@
 			productReference = 09DE6AF01EB03F1400D1F8B1 /* RainyShinyCloudy.app */;
 			productType = "com.apple.product-type.application";
 		};
-		09DE6B031EB03F1400D1F8B1 /* RainyShinyCloudyTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 09DE6B1B1EB03F1400D1F8B1 /* Build configuration list for PBXNativeTarget "RainyShinyCloudyTests" */;
-			buildPhases = (
-				09DE6B001EB03F1400D1F8B1 /* Sources */,
-				09DE6B011EB03F1400D1F8B1 /* Frameworks */,
-				09DE6B021EB03F1400D1F8B1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				09DE6B061EB03F1400D1F8B1 /* PBXTargetDependency */,
-			);
-			name = RainyShinyCloudyTests;
-			productName = RainyShinyCloudyTests;
-			productReference = 09DE6B041EB03F1400D1F8B1 /* RainyShinyCloudyTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		09DE6B0E1EB03F1400D1F8B1 /* RainyShinyCloudyUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 09DE6B1E1EB03F1400D1F8B1 /* Build configuration list for PBXNativeTarget "RainyShinyCloudyUITests" */;
-			buildPhases = (
-				09DE6B0B1EB03F1400D1F8B1 /* Sources */,
-				09DE6B0C1EB03F1400D1F8B1 /* Frameworks */,
-				09DE6B0D1EB03F1400D1F8B1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				09DE6B111EB03F1400D1F8B1 /* PBXTargetDependency */,
-			);
-			name = RainyShinyCloudyUITests;
-			productName = RainyShinyCloudyUITests;
-			productReference = 09DE6B0F1EB03F1400D1F8B1 /* RainyShinyCloudyUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -259,22 +238,16 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "ABtech Applications";
 				TargetAttributes = {
+					097191DA1EC78DF800AAC75F = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 979TTQWNS8;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 09DE6AEF1EB03F1400D1F8B1;
+					};
 					09DE6AEF1EB03F1400D1F8B1 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 979TTQWNS8;
 						ProvisioningStyle = Automatic;
-					};
-					09DE6B031EB03F1400D1F8B1 = {
-						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 979TTQWNS8;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 09DE6AEF1EB03F1400D1F8B1;
-					};
-					09DE6B0E1EB03F1400D1F8B1 = {
-						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 979TTQWNS8;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 09DE6AEF1EB03F1400D1F8B1;
 					};
 				};
 			};
@@ -292,13 +265,19 @@
 			projectRoot = "";
 			targets = (
 				09DE6AEF1EB03F1400D1F8B1 /* RainyShinyCloudy */,
-				09DE6B031EB03F1400D1F8B1 /* RainyShinyCloudyTests */,
-				09DE6B0E1EB03F1400D1F8B1 /* RainyShinyCloudyUITests */,
+				097191DA1EC78DF800AAC75F /* RainyShinyCloudyUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		097191D91EC78DF800AAC75F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		09DE6AEE1EB03F1400D1F8B1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -306,20 +285,6 @@
 				09DE6AFE1EB03F1400D1F8B1 /* LaunchScreen.storyboard in Resources */,
 				09DE6AFB1EB03F1400D1F8B1 /* Assets.xcassets in Resources */,
 				09DE6AF91EB03F1400D1F8B1 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		09DE6B021EB03F1400D1F8B1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		09DE6B0D1EB03F1400D1F8B1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +339,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		097191D71EC78DF800AAC75F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				097191DE1EC78DF800AAC75F /* RainyShinyCloudyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		09DE6AEC1EB03F1400D1F8B1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -388,32 +361,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		09DE6B001EB03F1400D1F8B1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		09DE6B0B1EB03F1400D1F8B1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		09DE6B061EB03F1400D1F8B1 /* PBXTargetDependency */ = {
+		097191E11EC78DF800AAC75F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 09DE6AEF1EB03F1400D1F8B1 /* RainyShinyCloudy */;
-			targetProxy = 09DE6B051EB03F1400D1F8B1 /* PBXContainerItemProxy */;
-		};
-		09DE6B111EB03F1400D1F8B1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 09DE6AEF1EB03F1400D1F8B1 /* RainyShinyCloudy */;
-			targetProxy = 09DE6B101EB03F1400D1F8B1 /* PBXContainerItemProxy */;
+			targetProxy = 097191E01EC78DF800AAC75F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -437,6 +391,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		097191E31EC78DF800AAC75F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 979TTQWNS8;
+				INFOPLIST_FILE = RainyShinyCloudyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.abtechapps.RainyShinyCloudyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RainyShinyCloudy;
+			};
+			name = Debug;
+		};
+		097191E41EC78DF800AAC75F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 979TTQWNS8;
+				INFOPLIST_FILE = RainyShinyCloudyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.abtechapps.RainyShinyCloudyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RainyShinyCloudy;
+			};
+			name = Release;
+		};
 		09DE6B161EB03F1400D1F8B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -562,67 +542,17 @@
 			};
 			name = Release;
 		};
-		09DE6B1C1EB03F1400D1F8B1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 979TTQWNS8;
-				INFOPLIST_FILE = RainyShinyCloudyTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.abtechapps.RainyShinyCloudyTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RainyShinyCloudy.app/RainyShinyCloudy";
-			};
-			name = Debug;
-		};
-		09DE6B1D1EB03F1400D1F8B1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 979TTQWNS8;
-				INFOPLIST_FILE = RainyShinyCloudyTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.abtechapps.RainyShinyCloudyTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RainyShinyCloudy.app/RainyShinyCloudy";
-			};
-			name = Release;
-		};
-		09DE6B1F1EB03F1400D1F8B1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = 979TTQWNS8;
-				INFOPLIST_FILE = RainyShinyCloudyUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.abtechapps.RainyShinyCloudyUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = RainyShinyCloudy;
-			};
-			name = Debug;
-		};
-		09DE6B201EB03F1400D1F8B1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = 979TTQWNS8;
-				INFOPLIST_FILE = RainyShinyCloudyUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.abtechapps.RainyShinyCloudyUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = RainyShinyCloudy;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		097191E21EC78DF800AAC75F /* Build configuration list for PBXNativeTarget "RainyShinyCloudyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				097191E31EC78DF800AAC75F /* Debug */,
+				097191E41EC78DF800AAC75F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		09DE6AEB1EB03F1400D1F8B1 /* Build configuration list for PBXProject "RainyShinyCloudy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -637,24 +567,6 @@
 			buildConfigurations = (
 				09DE6B191EB03F1400D1F8B1 /* Debug */,
 				09DE6B1A1EB03F1400D1F8B1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		09DE6B1B1EB03F1400D1F8B1 /* Build configuration list for PBXNativeTarget "RainyShinyCloudyTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				09DE6B1C1EB03F1400D1F8B1 /* Debug */,
-				09DE6B1D1EB03F1400D1F8B1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		09DE6B1E1EB03F1400D1F8B1 /* Build configuration list for PBXNativeTarget "RainyShinyCloudyUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				09DE6B1F1EB03F1400D1F8B1 /* Debug */,
-				09DE6B201EB03F1400D1F8B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

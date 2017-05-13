@@ -2,7 +2,7 @@
 //  RainyShinyCloudyUITests.swift
 //  RainyShinyCloudyUITests
 //
-//  Created by Allen Boynton on 4/25/17.
+//  Created by Allen Boynton on 5/13/17.
 //  Copyright © 2017 ABtech Applications. All rights reserved.
 //
 
@@ -29,8 +29,13 @@ class RainyShinyCloudyUITests: XCTestCase {
     }
     
     func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let tablesQuery = XCUIApplication().tables
+        tablesQuery.staticTexts["Tuesday"].swipeUp()
+        tablesQuery.cells.containing(.staticText, identifier:"Thursday").staticTexts["Rain"].swipeUp()
+        tablesQuery.cells.containing(.staticText, identifier:"Saturday").staticTexts["Clear"].swipeUp()
+        tablesQuery.staticTexts["Friday"].tap()
+        
     }
     
 }
