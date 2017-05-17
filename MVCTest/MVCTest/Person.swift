@@ -11,8 +11,8 @@ import Foundation
 
 class Person {
     
-    private var _firstName: String
-    private var _lastName: String
+    private var _firstName: String!
+    private var _lastName: String!
     
     var firstName: String {
         get {
