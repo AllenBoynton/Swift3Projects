@@ -16,14 +16,23 @@ class PartyRock {
     private var _videoTitle: String!
     
     var imageURL: String {
+        if _imageURL == nil {
+            _imageURL = ""
+        }
         return _imageURL
     }
     
     var videoURL: String {
+        if _videoURL == nil {
+            _videoURL = ""
+        }
         return _videoURL
     }
     
     var videoTitle: String {
+        if _videoTitle == nil {
+            
+        }
         return _videoTitle
     }
     

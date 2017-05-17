@@ -14,11 +14,6 @@ class PartyCell: UITableViewCell {
     
     @IBOutlet weak var videoTitle: UILabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        
-    }
-    
     func updateUI(partyRock: PartyRock) {
         
         // Creates title in table view row
@@ -35,7 +30,7 @@ class PartyCell: UITableViewCell {
                 }
             }
             catch {
-                
+                // Handle the error
             }
         }
         

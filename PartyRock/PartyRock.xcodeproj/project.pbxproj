@@ -64,21 +64,21 @@
 			children = (
 				095597371EA559A400E2EF7D /* AppDelegate.swift */,
 				0955974B1EA559DA00E2EF7D /* Resources */,
-				095597531EA587CE00E2EF7D /* Model */,
 				0955974A1EA559CA00E2EF7D /* Storyboards */,
-				095597521EA561D100E2EF7D /* Views */,
-				095597491EA559B800E2EF7D /* ViewControllers */,
+				095597531EA587CE00E2EF7D /* Model */,
+				095597521EA561D100E2EF7D /* View */,
+				095597491EA559B800E2EF7D /* ViewController */,
 			);
 			path = PartyRock;
 			sourceTree = "<group>";
 		};
-		095597491EA559B800E2EF7D /* ViewControllers */ = {
+		095597491EA559B800E2EF7D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				095597391EA559A400E2EF7D /* MainVC.swift */,
 				0955974E1EA55F9F00E2EF7D /* VideoVC.swift */,
+				095597391EA559A400E2EF7D /* MainVC.swift */,
 			);
-			name = ViewControllers;
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 		0955974A1EA559CA00E2EF7D /* Storyboards */ = {
@@ -100,12 +100,12 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		095597521EA561D100E2EF7D /* Views */ = {
+		095597521EA561D100E2EF7D /* View */ = {
 			isa = PBXGroup;
 			children = (
 				095597501EA5613C00E2EF7D /* PartyCell.swift */,
 			);
-			name = Views;
+			name = View;
 			sourceTree = "<group>";
 		};
 		095597531EA587CE00E2EF7D /* Model */ = {
@@ -360,6 +360,7 @@
 				095597481EA559A400E2EF7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
