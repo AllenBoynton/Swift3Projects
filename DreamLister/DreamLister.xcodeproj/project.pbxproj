@@ -15,6 +15,7 @@
 		09C1ACC41ECBDA6D00FE5FFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09C1ACC21ECBDA6D00FE5FFC /* LaunchScreen.storyboard */; };
 		09C1ACE51ECBE6DC00FE5FFC /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C1ACE41ECBE6DC00FE5FFC /* CustomTextField.swift */; };
 		09C1ACE71ECBE73100FE5FFC /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C1ACE61ECBE73100FE5FFC /* MaterialView.swift */; };
+		09C1ACE91ECBEBB700FE5FFC /* ListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C1ACE81ECBEBB700FE5FFC /* ListViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		09C1ACC51ECBDA6D00FE5FFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09C1ACE41ECBE6DC00FE5FFC /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		09C1ACE61ECBE73100FE5FFC /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		09C1ACE81ECBEBB700FE5FFC /* ListViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			children = (
 				09C1ACE41ECBE6DC00FE5FFC /* CustomTextField.swift */,
 				09C1ACE61ECBE73100FE5FFC /* MaterialView.swift */,
+				09C1ACE81ECBEBB700FE5FFC /* ListViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 				09C1ACB91ECBDA6D00FE5FFC /* MainVC.swift in Sources */,
 				09C1ACE71ECBE73100FE5FFC /* MaterialView.swift in Sources */,
 				09C1ACB71ECBDA6D00FE5FFC /* AppDelegate.swift in Sources */,
+				09C1ACE91ECBEBB700FE5FFC /* ListViewCell.swift in Sources */,
 				09C1ACBF1ECBDA6D00FE5FFC /* DreamLister.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
