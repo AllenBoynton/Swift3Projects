@@ -148,6 +148,7 @@ class Pokemon {
         Alamofire.request(_pokemonURL).responseJSON { (response) in
             
             if let dict = response.result.value as? Dictionary<String, AnyObject> {
+                print(response)
                 
                 if let weight = dict["weight"] as? String {
                     
@@ -211,7 +212,7 @@ class Pokemon {
                                 
                                 if let description = descDict["description"] as? String {
                                     
-                                    let newDescription = description.replacingOccurrences(of: "POKMON", with: "Pokemon")
+                                    let newDescription = description.replacingOccurrences(of: "POKEMON", with: "Pokemon")
                                     
                                     self._description = newDescription
                                     print(newDescription)
