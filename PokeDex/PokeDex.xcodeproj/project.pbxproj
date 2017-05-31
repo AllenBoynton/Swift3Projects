@@ -23,6 +23,7 @@
 		09D0C8CC1EB2F808003B9E86 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D0C8CB1EB2F808003B9E86 /* csv.swift */; };
 		09D0C8CE1EB2F820003B9E86 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D0C8CD1EB2F820003B9E86 /* Constants.swift */; };
 		09FD22631EB82F28006C8028 /* Pods_PokeDex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09FD22621EB82F28006C8028 /* Pods_PokeDex.framework */; };
+		EF9D47F92FB55C31D9C7D0CC /* Pods_PokeDex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4D05193A6D72E553127722 /* Pods_PokeDex.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		09D0C8CD1EB2F820003B9E86 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		09FD22621EB82F28006C8028 /* Pods_PokeDex.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_PokeDex.framework; path = "../../../../../../../Full Sail/Current Class/Visual Frameworks/Developer/PokeDex-ciakxxfhamvklpaeevnegmnyrbqp/Build/Products/Debug-iphonesimulator/Pods_PokeDex.framework"; sourceTree = "<group>"; };
 		45A5D3C9EAE07181D83A5721 /* Pods-PokeDex.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokeDex.release.xcconfig"; path = "Pods/Target Support Files/Pods-PokeDex/Pods-PokeDex.release.xcconfig"; sourceTree = "<group>"; };
+		BA4D05193A6D72E553127722 /* Pods_PokeDex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PokeDex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4D4DC76EBCC3098559FA4A8 /* Pods-PokeDex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokeDex.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PokeDex/Pods-PokeDex.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,6 +58,7 @@
 				09FD22631EB82F28006C8028 /* Pods_PokeDex.framework in Frameworks */,
 				095490A61EB4072300F837E5 /* Alamofire.framework in Frameworks */,
 				095490A41EB4066A00F837E5 /* AVFoundation.framework in Frameworks */,
+				EF9D47F92FB55C31D9C7D0CC /* Pods_PokeDex.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +149,7 @@
 				09FD22621EB82F28006C8028 /* Pods_PokeDex.framework */,
 				095490A51EB4072300F837E5 /* Alamofire.framework */,
 				095490A11EB4066A00F837E5 /* AVFoundation.framework */,
+				BA4D05193A6D72E553127722 /* Pods_PokeDex.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
