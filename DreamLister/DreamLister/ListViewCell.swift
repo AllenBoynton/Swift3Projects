@@ -15,12 +15,10 @@ class ListViewCell: UITableViewCell {
     @IBOutlet weak var itemPrice: UILabel!
     @IBOutlet weak var itemDetail: UILabel!
     
-    
-
     func configureCell(item: Item) {
-        itemTitle.text = "Tesla Model S"
-        itemPrice.text = "$80,000"
-        itemDetail.text = "Someday my dreams will come true and I will own this car. Just you wait!"
+        itemTitle.text = item.title
+        itemPrice.text = "$\(item.price)"
+        itemDetail.text = item.details
 //        dreamImage.image = UIImage(named: item.item)
     }
 
