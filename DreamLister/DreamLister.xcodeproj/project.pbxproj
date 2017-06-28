@@ -99,8 +99,8 @@
 		09C1ACCB1ECBDAC900FE5FFC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				09C1ACB81ECBDA6D00FE5FFC /* MainVC.swift */,
 				0902813D1F0335290076DB99 /* ItemDetailsVC.swift */,
+				09C1ACB81ECBDA6D00FE5FFC /* MainVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";

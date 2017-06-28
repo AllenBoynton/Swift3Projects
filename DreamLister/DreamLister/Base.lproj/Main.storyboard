@@ -225,6 +225,10 @@
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RzG-Cy-qwP">
                                 <rect key="frame" x="0.0" y="270.5" width="320" height="185.5"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="KVp-TF-sWr" id="ViO-KH-P2G"/>
+                                    <outlet property="delegate" destination="KVp-TF-sWr" id="Y1w-UV-5bX"/>
+                                </connections>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eT2-1o-7M7">
                                 <rect key="frame" x="0.0" y="456" width="320" height="40"/>
@@ -236,6 +240,9 @@
                                 <state key="normal" title="Save Item">
                                     <color key="titleColor" white="0.89554102891156462" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="saveItemButtonTapped:" destination="KVp-TF-sWr" eventType="touchUpInside" id="8Ug-xZ-OuP"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -267,8 +274,17 @@
                     <navigationItem key="navigationItem" title="Add/Edit" id="Q4S-m9-WGx">
                         <barButtonItem key="rightBarButtonItem" systemItem="trash" id="DMC-0w-5iC">
                             <color key="tintColor" red="0.99955016370000005" green="0.0096072526649999997" blue="0.01521278266" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="deleteItemButtonPressed:" destination="KVp-TF-sWr" id="QdN-2K-1US"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="detailsField" destination="XeB-Sk-eld" id="FSp-II-LK2"/>
+                        <outlet property="priceField" destination="WkU-5W-RUx" id="USX-TA-7nh"/>
+                        <outlet property="storePicker" destination="RzG-Cy-qwP" id="3ML-PR-YSs"/>
+                        <outlet property="titleField" destination="wTG-NC-oC0" id="rPO-gO-lHY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hnt-g0-kTO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

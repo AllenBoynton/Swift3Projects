@@ -22,7 +22,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        generateTestData()
+//        generateTestData() // Will keep adding items if on
         attemptFetch()
     }
     
@@ -114,10 +114,6 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         
         ad.saveContext()
     }
-    
-    
-    
-    
     
 
 }
