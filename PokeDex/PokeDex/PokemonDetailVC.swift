@@ -39,7 +39,7 @@ class PokemonDetailVC: UIViewController {
         
         pokemon.downloadPokemonDetail {
             
-        // Whatever we write will only be called after the network call is compelte!
+        // Whatever we write will only be called after the network call is complete!
         self.updateUI()
         }
     }
