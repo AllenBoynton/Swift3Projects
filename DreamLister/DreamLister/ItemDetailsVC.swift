@@ -38,21 +38,6 @@ class ItemDetailsVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
         getStores()
     }
     
-    func getStores() {
-        
-        let fetchRequest: NSFetchRequest<Store> = Store.fetchRequest()
-        
-        do {
-            self.stores = try context.fetch(fetchRequest)
-            self.storePicker.reloadAllComponents()
-        }
-        catch {
-            // Handle the error
-            let error = error as NSError
-            print("\(error)")
-        }
-    }
-    
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         // Update when selected
     }
@@ -71,11 +56,60 @@ class ItemDetailsVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
         
         return 1 // Store
     }
+    
+    func getStores() {
+        
+        let fetchRequest: NSFetchRequest<Store> = Store.fetchRequest()
+        
+        do {
+            self.stores = try context.fetch(fetchRequest)
+            self.storePicker.reloadAllComponents()
+        }
+        catch {
+            // Handle the error
+            let error = error as NSError
+            print("\(error)")
+        }
+    }
 
     @IBAction func saveItemButtonTapped(_ sender: UIButton) {
         
+        let item = Item(context: context)
         
+        if let title = titleField.text {
+            
+            item.title = title
+        }
+        
+        if let price = priceField.text {
+            
+            item.price = (price as NSString).doubleValue
+        }
+        
+        if let details = detailsField.text {
+            
+            item.details = details
+        }
+        
+        
+        item.toStore = stores[storePicker.selectedRow(inComponent: 0)]
+        
+        ad.saveContext()
+        
+        navigationController?.popViewController(animated: true)
     }
+    
     @IBAction func deleteItemButtonPressed(_ sender: UIBarButtonItem) {
     }
 }
+
+
+
+
+
+
+
+
+
+
+
