@@ -19,7 +19,6 @@ class ListViewCell: UITableViewCell {
         itemTitle.text = item.title
         itemPrice.text = "$\(item.price)"
         itemDetail.text = item.details
-//        dreamImage.image = UIImage(named: item.item)
+        dreamImage.image = item.toImage?.image as? UIImage
     }
-
 }

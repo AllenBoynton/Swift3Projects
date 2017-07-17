@@ -11,6 +11,7 @@ import CoreData
 
 // Global identifier
 let itemCell = "DreamCell"
+let itemDetailsVC = "ItemDetailsVC"
 
 class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFetchedResultsControllerDelegate {
 
@@ -31,7 +32,6 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         if let sections = controller.sections {
             return sections.count
         }
-        
         return 0
     }
     
@@ -42,22 +42,19 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
             let sectionData = sections[section]
             return sectionData.numberOfObjects
         }
-        
         return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: itemCell, for: indexPath) as? ListViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: itemCell,
+                                                    for: indexPath) as! ListViewCell
             
-            configureCell(cell: cell, indexPath: indexPath as NSIndexPath)
-            return cell
-        } else {
-            return ListViewCell()
-        }
+        configureCell(cell: cell, indexPath: indexPath as NSIndexPath)
+        return cell
     }
     
     func configureCell(cell: ListViewCell, indexPath: NSIndexPath) {
-        
         // Update cell
         let item = controller.object(at: indexPath as IndexPath)
         cell.configureCell(item: item)
@@ -68,13 +65,13 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         if let objects = controller.fetchedObjects, objects.count > 0 {
             
             let item = objects[indexPath.row]
-            performSegue(withIdentifier: "ItemDetailsVC", sender: item)
+            performSegue(withIdentifier: itemDetailsVC, sender: item)
         }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        if segue.identifier == "ItemDetailsVC" {
+        if segue.identifier == itemDetailsVC {
             
             if let destination = segue.destination as? ItemDetailsVC {
                 
@@ -93,8 +90,22 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
     
     func attemptFetch() {
         let fetchRequest: NSFetchRequest<Item> = Item.fetchRequest()
-        let dataSort = NSSortDescriptor(key: "created", ascending: false)
-        fetchRequest.sortDescriptors = [dataSort]
+        let dateSort = NSSortDescriptor(key: "created", ascending: false)
+        let priceSort = NSSortDescriptor(key: "price", ascending: true)
+        let titleSort = NSSortDescriptor(key: "title", ascending: true)
+        
+        if segment.selectedSegmentIndex == 0 {
+            
+            fetchRequest.sortDescriptors = [dateSort]
+            
+        } else if segment.selectedSegmentIndex == 1 {
+            
+            fetchRequest.sortDescriptors = [priceSort]
+            
+        } else if segment.selectedSegmentIndex == 2 {
+            
+            fetchRequest.sortDescriptors = [titleSort]
+        }
         
         let controller = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
         
@@ -110,6 +121,12 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         }
     }
     
+    @IBAction func segmentChange(_ sender: AnyObject) {
+        
+        attemptFetch()
+        tableView.reloadData()
+    }
+    
     func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         
         tableView.beginUpdates()
@@ -118,6 +135,36 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         
         tableView.endUpdates()
+    }
+    
+    func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange sectionInfo: NSFetchedResultsSectionInfo, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?) {
+        
+        switch(type) {
+        case.insert:
+            if let indexPath = newIndexPath {
+                tableView.insertRows(at: [indexPath], with: .fade)
+            }
+            break
+        case.delete:
+            if let indexPath = indexPath {
+                tableView.deleteRows(at: [indexPath], with: .fade)
+            }
+            break
+        case.update:
+            if let indexPath = indexPath {
+                let cell = tableView.cellForRow(at: indexPath) as! ListViewCell
+                configureCell(cell: cell, indexPath: indexPath as NSIndexPath)
+            }
+            break
+        case.move:
+            if let indexPath = newIndexPath {
+                tableView.deleteRows(at: [indexPath], with: .fade)
+            }
+            if let indexPath = indexPath {
+                tableView.insertRows(at: [indexPath], with: .fade)
+            }
+            break
+        }
     }
     
     func generateTestData() {
@@ -139,7 +186,5 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         
         ad.saveContext()
     }
-    
-
 }
 
