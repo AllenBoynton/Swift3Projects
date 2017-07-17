@@ -15,7 +15,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Dream Lister-->
+        <!--DreamLister-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController modalTransitionStyle="crossDissolve" id="BYZ-38-t0r" customClass="MainVC" customModule="DreamLister" customModuleProvider="target" sceneMemberID="viewController">
@@ -142,7 +142,7 @@
                             <constraint firstAttribute="trailing" secondItem="ahl-7t-mE5" secondAttribute="trailing" constant="20" id="oP9-PT-Eji"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Dream Lister" id="hF7-Hk-Rzp">
+                    <navigationItem key="navigationItem" title="DreamLister" id="hF7-Hk-Rzp">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="jfl-1f-03i">
                             <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>

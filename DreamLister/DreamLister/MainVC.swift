@@ -23,46 +23,26 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        generateTestData() // Will keep adding items if on
+//        generateTestData() // Will keep adding items if uncommented
         attemptFetch()
-    }
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        
-        if let sections = controller.sections {
-            return sections.count
-        }
-        return 0
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        if let sections = controller.sections {
-            
-            let sectionData = sections[section]
-            return sectionData.numberOfObjects
-        }
-        return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: itemCell,
-                                                    for: indexPath) as! ListViewCell
-            
+        let cell = tableView.dequeueReusableCell(withIdentifier: itemCell, for: indexPath) as! ListViewCell
         configureCell(cell: cell, indexPath: indexPath as NSIndexPath)
         return cell
     }
     
     func configureCell(cell: ListViewCell, indexPath: NSIndexPath) {
-        // Update cell
+        
         let item = controller.object(at: indexPath as IndexPath)
         cell.configureCell(item: item)
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        if let objects = controller.fetchedObjects, objects.count > 0 {
+        if let objects = controller.fetchedObjects , objects.count > 0 {
             
             let item = objects[indexPath.row]
             performSegue(withIdentifier: itemDetailsVC, sender: item)
@@ -70,17 +50,33 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
         if segue.identifier == itemDetailsVC {
-            
             if let destination = segue.destination as? ItemDetailsVC {
-                
                 if let item = sender as? Item {
-                    
                     destination.itemToEdit = item
                 }
             }
         }
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        if let sections = controller.sections {
+            
+            let sectionInfo = sections[section]
+            return sectionInfo.numberOfObjects
+        }
+        
+        return 0
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        
+        if let sections = controller.sections {
+            return sections.count
+        }
+        
+        return 0
     }
     
     // Row height
